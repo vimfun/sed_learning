@@ -1,0 +1,4 @@
+cat:betty
+dog:frank
+fish:george
+goat:adam
