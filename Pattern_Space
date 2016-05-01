@@ -1,0 +1,11 @@
+foreach line in file {
+    // 把行放入Pattern_Space
+    Pattern_Space <= line;
+
+    // 对于每个Pattern_Space执行sed命令
+    Pattern_Space1 <= EXEC(sed_cmd, Pattern_Space);
+
+    if (sed option hasn't "-n") {
+        print Pattern_Space1
+    }
+}

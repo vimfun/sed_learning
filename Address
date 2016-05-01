@@ -1,0 +1,16 @@
+[address[,address]][!]{cmd}
+// address 可以是一个数字，也可以是一个模式, 可以通过逗号来分隔两个address 表示两个address的区间
+
+bool bexec = false
+foreach line in file {
+    if (match(address1)) {
+    }
+
+    if (bexec = true) {
+        EXEC(sed_cmd)
+    }
+
+    if (match(address2)) {
+        bexec = false
+    }
+}
